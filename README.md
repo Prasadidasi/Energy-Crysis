@@ -1,2 +1,2 @@
 # Energy Crysis
-Submission for the Gothenburg Science Jam. 
+Submission for the Gothenburg Science Jam 2022. 
