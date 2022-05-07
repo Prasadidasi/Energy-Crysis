@@ -7,7 +7,7 @@ public class Clock : MonoBehaviour
 {
     public Text clockTime;
     public float MaxTime = 3f;
-    private float currentTime = 3f;
+    private float currentTime = 300f;
     private bool isClockTimeFinished = false;
 
     public void Start()
@@ -22,7 +22,15 @@ public class Clock : MonoBehaviour
         if(currentTime <= 0 && !isClockTimeFinished)
         {
             isClockTimeFinished = true;
+            currentTime = 0;
+            clockTime.text = currentTime.ToString();
         }
+        
+        if(!isClockTimeFinished)
+        {
+            clockTime.text = currentTime.ToString();
+        }
+
     }
 
     //Call this is game manager, do a check and if true then end game!
