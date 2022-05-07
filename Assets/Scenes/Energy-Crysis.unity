@@ -533,6 +533,10 @@ PrefabInstance:
       value: CanvasManager
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
+      propertyPath: defaultCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 1475cc854f383ff43bdec221b517622f, type: 3}
+    - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: playerController
       value: 
       objectReference: {fileID: 963194225}

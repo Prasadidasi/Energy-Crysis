@@ -10,7 +10,8 @@ public class CanvasManager : MonoBehaviour
     [SerializeField] int levelNumber;
 
     public TMP_Text countDownText;
-    
+    public Texture2D defaultCursor;
+
     static Menu gameOverMenu;
     static Menu escMenu;
     static Menu goalMenu;
@@ -22,6 +23,7 @@ public class CanvasManager : MonoBehaviour
     //public MenuActions menuControls;
     private InputAction pause;
     private InputAction click;
+    private Vector2 hotSpot = new Vector2(0, 0);
 
     
     private void Awake()
@@ -39,6 +41,10 @@ public class CanvasManager : MonoBehaviour
         StartGame();
     }
 
+    private void Start()
+    {
+        Cursor.SetCursor(defaultCursor, hotSpot, CursorMode.Auto);
+    }
     void FixedUpdate()
     {
     }
@@ -87,7 +93,6 @@ public class CanvasManager : MonoBehaviour
     public void ResumeGame ()
     {
         Time.timeScale = 1;
-        Cursor.visible = false;
     }
 
     public void LeaveGame()
@@ -121,7 +126,6 @@ public class CanvasManager : MonoBehaviour
 
     public void StartGame()
     {
-        Cursor.visible = false;
         Time.timeScale = 1;
     }
 
