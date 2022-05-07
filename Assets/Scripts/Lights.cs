@@ -48,7 +48,6 @@ public class Lights : MonoBehaviour
         currentEnergyTime = EnergyTime;
         LightsOffPrefab.SetActive(false);
         this.GetComponent<SpriteRenderer>().sprite = LightOn;
-        this.GetComponent<SpriteRenderer>().sortingOrder = 0;
         UpdateEnergy();     
     }
 
@@ -56,7 +55,6 @@ public class Lights : MonoBehaviour
     {
         isLightsOn = false;
         this.GetComponent<SpriteRenderer>().sprite = LightOff;
-        this.GetComponent<SpriteRenderer>().sortingOrder = 1;
         currentEnergyTime = EnergyTime;
         LightsOffPrefab.SetActive(true);
     }

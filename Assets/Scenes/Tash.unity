@@ -527,6 +527,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1514442504}
     m_Modifications:
+    - target: {fileID: 4692385128004682558, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4692385128004682558, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.65
+      objectReference: {fileID: 0}
     - target: {fileID: 6519467168690386040, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
       propertyPath: m_Name
       value: Light (1)
@@ -1419,10 +1427,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569197276}
     m_Modifications:
-    - target: {fileID: 6519467168690386037, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6519467168690386040, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
       propertyPath: m_Name
       value: Light
