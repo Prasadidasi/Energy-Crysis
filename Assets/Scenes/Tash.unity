@@ -300,15 +300,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 178945280346208006, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.68
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 178945280346208006, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.17
+      value: -3.23
       objectReference: {fileID: 0}
     - target: {fileID: 178945280346208006, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 178945280346208006, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -337,18 +337,6 @@ PrefabInstance:
     - target: {fileID: 178945280346208006, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2053636475598517734, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2053636475598517734, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2053636475598517734, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1843432413
       objectReference: {fileID: 0}
     - target: {fileID: 8887088532965257741, guid: 075168981d6f8fc448e5d67f942dcd4a, type: 3}
       propertyPath: m_Name
@@ -463,7 +451,7 @@ Camera:
   m_GameObject: {fileID: 1083697299}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
