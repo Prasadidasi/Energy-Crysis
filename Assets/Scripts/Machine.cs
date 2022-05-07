@@ -82,7 +82,7 @@ public class Machine : MonoBehaviour
         }
         else
         {
-            //TODO: start VFX
+            effectVFX.SetActive(true);
         }
         UpdateEnergy();
     }
@@ -96,7 +96,7 @@ public class Machine : MonoBehaviour
         }
         else
         {
-            //TODO: Stop VFX
+            effectVFX.SetActive(false);
         }
         currentEnergyTime = EnergyTime;
         currentTime = 0;
