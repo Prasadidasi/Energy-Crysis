@@ -7,7 +7,7 @@ public class Clock : MonoBehaviour
 {
     public Text clockTime;
     public float MaxTime = 3f;
-    private float currentTime = 300f;
+    [SerializeField] private float currentTime = 300f;
     private bool isClockTimeFinished = false;
 
     public void Start()
