@@ -19,9 +19,11 @@ public class Machine : MonoBehaviour
     public GameObject effectVFX;
 
     [Header("SFX Settings")]
-    public AudioSource clicked; //TODO
+    public string AudioName = "wrr";
+    AudioManager audioManager;
 
     [Header("Sprite Settings")]
+    [Tooltip("This boolean is used to either use sprite swapping or vfx smoke when the machine is on")]
     public bool RequiresSpriteSwap = false;
     public Sprite MachineOffSprite;
     public Sprite MachineOnSprite;
@@ -32,10 +34,15 @@ public class Machine : MonoBehaviour
     void Start()
     {
         energyBar = GameObject.FindObjectOfType<EnergyBar>();
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
         StopMachine();
         if(effectVFX == null)
         {
             Debug.LogWarning("effect vfx prefab for " + this.gameObject.name + " has been not added (is null)");
+        }
+        if (MachineOffSprite == null)
+        {
+            Debug.LogWarning("machine off sprite for " + this.gameObject.name + " has been not added (is null)");
         }
     }
 
@@ -85,6 +92,7 @@ public class Machine : MonoBehaviour
             effectVFX.SetActive(true);
         }
         UpdateEnergy();
+        audioManager.Play(AudioName);
     }
 
     public void StopMachine()
@@ -100,6 +108,7 @@ public class Machine : MonoBehaviour
         }
         currentEnergyTime = EnergyTime;
         currentTime = 0;
+        audioManager.Stop(AudioName);
     }
 
     public bool GetIsMachineOn() //getting status of machine
