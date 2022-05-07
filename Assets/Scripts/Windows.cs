@@ -11,8 +11,6 @@ public class Windows : MonoBehaviour
     public Sprite Phase2;
     public Sprite Phase3;
 
-    bool hasEnteredNextPhase = false;
-
     void Start()
     {
         energyBar = GameObject.FindObjectOfType<EnergyBar>();
