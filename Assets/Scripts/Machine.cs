@@ -66,6 +66,12 @@ public class Machine : MonoBehaviour
         }
     }
 
+    //TODO: hover status?
+    //private void OnMouseOver()
+    //{
+        
+    //}
+
     public void StartMachine()
     {
         isUsingMachine = true;
