@@ -16,13 +16,13 @@ public class EnergyBar : MonoBehaviour
         energyImage.fillAmount = Mathf.Clamp(/*Todo addenergyconsumption value ie. energy / energyMax*/currentEnergy/MaxEnergy, 0, 1f);
     }
 
-    public void MinusEnergy(int amount)
+    public void MinusEnergy(float amount)
     {
         currentEnergy -= amount;
         UpdateEnergyBar();
     }
 
-    public void AddEnergy(int amount)
+    public void AddEnergy(float amount)
     {
         currentEnergy += amount;
         UpdateEnergyBar();

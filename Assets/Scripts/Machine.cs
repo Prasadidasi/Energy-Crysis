@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Machine : MonoBehaviour
 {
     [Header("Machine Settings")]
-    public int EnergyConsumedPerSecond = 2;//TODO 
+    public float EnergyConsumedPerSecond = 2;//TODO 
     public float MaxUseTime = 20f;//in seconds
 
     [SerializeField] private float currentTime = 0;
