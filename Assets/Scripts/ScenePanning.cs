@@ -30,7 +30,7 @@ public class ScenePanning : MonoBehaviour
 
     public void PanLeft()
     {
-        if((mainCamera.transform.position.x) > -SceneWidth)
+        if((mainCamera.transform.position.x) > 0)
         {
             mainCamera.transform.position = new Vector3(mainCamera.transform.position.x - panAmount, mainCamera.transform.position.y, mainCamera.transform.position.z);
         }

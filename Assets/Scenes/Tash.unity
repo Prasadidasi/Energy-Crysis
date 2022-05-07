@@ -849,14 +849,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowNavigation
       objectReference: {fileID: 0}
-    - target: {fileID: 1311260923502106863, guid: 7eef713560ab3d74782c3b5ca9944223, type: 3}
-      propertyPath: SceneWidth
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1311260923502106863, guid: 7eef713560ab3d74782c3b5ca9944223, type: 3}
-      propertyPath: SceneHeight
-      value: 19
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eef713560ab3d74782c3b5ca9944223, type: 3}
 --- !u!1001 &5638379706888213612
