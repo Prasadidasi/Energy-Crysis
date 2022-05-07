@@ -7,10 +7,24 @@ public class EnergyBar : MonoBehaviour
 {
     public Image energyImage;
 
+    public float MaxEnergy = 100;
+    private float currentEnergy = 100;
     //todo add player or energy consumption thing here.
 
-    public void UpdateEnergyBar()
+    private void UpdateEnergyBar()
     {
-        energyImage.fillAmount = Mathf.Clamp(/*Todo addenergyconsumption value ie. energy / energyMax*/50/100, 0, 1f);
+        energyImage.fillAmount = Mathf.Clamp(/*Todo addenergyconsumption value ie. energy / energyMax*/currentEnergy/MaxEnergy, 0, 1f);
+    }
+
+    public void MinusEnergy(int amount)
+    {
+        currentEnergy -= amount;
+        UpdateEnergyBar();
+    }
+
+    public void AddEnergy(int amount)
+    {
+        currentEnergy += amount;
+        UpdateEnergyBar();
     }
 }
