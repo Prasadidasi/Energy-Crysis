@@ -42,4 +42,9 @@ public class Clock : MonoBehaviour
     {
         return isClockTimeFinished;
     }
+
+    public float GetCurrentTime()
+    {
+        return currentTime;
+    }
 }

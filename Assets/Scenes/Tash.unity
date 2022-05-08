@@ -1979,6 +1979,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite_Fridge
       objectReference: {fileID: 0}
+    - target: {fileID: 4250949744399417145, guid: e1d44ad1115665d4c9046efbe6622145, type: 3}
+      propertyPath: m_TagString
+      value: hungerItem
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1d44ad1115665d4c9046efbe6622145, type: 3}
 --- !u!1001 &5595761286270807268
@@ -2331,6 +2335,10 @@ PrefabInstance:
     - target: {fileID: 8096463613313337455, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
       propertyPath: m_Name
       value: Sprite_Stove_Off
+      objectReference: {fileID: 0}
+    - target: {fileID: 8096463613313337455, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
+      propertyPath: m_TagString
+      value: hungerItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}

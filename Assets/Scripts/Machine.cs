@@ -12,7 +12,7 @@ public class Machine : MonoBehaviour
     [SerializeField] private float currentTime = 0;
     private float EnergyTime = 1f;
     private float currentEnergyTime = 1f;
-    bool isUsingMachine = false;
+    public bool isUsingMachine = false;
     EnergyBar energyBar;
 
     [Header("VFX Settings")]
@@ -30,7 +30,6 @@ public class Machine : MonoBehaviour
     public Sprite MachineOnSprite;
     public bool hasLightOnSprite = false;
     public GameObject lightOnSprite;
-
 
     // Start is called before the first frame update
     void Start()
