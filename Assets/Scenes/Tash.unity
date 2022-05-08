@@ -1492,6 +1492,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sprite_Stereo
       objectReference: {fileID: 0}
+    - target: {fileID: 4333822615124263852, guid: 4fb13e64cd921cb418c5c2f2d7e8c4ae, type: 3}
+      propertyPath: MaxUseTime
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4333822615124263852, guid: 4fb13e64cd921cb418c5c2f2d7e8c4ae, type: 3}
+      propertyPath: EnergyConsumedPerSecond
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fb13e64cd921cb418c5c2f2d7e8c4ae, type: 3}
 --- !u!1001 &3290625449024888888
@@ -1558,6 +1566,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1514442504}
     m_Modifications:
+    - target: {fileID: 2024725272302399407, guid: bf3369e1a2bf34a47a049c5d7321cb23, type: 3}
+      propertyPath: MaxUseTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2024725272302399407, guid: bf3369e1a2bf34a47a049c5d7321cb23, type: 3}
+      propertyPath: EnergyConsumedPerSecond
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4094833194902569002, guid: bf3369e1a2bf34a47a049c5d7321cb23, type: 3}
       propertyPath: m_Name
       value: Sprite_Game
@@ -1780,6 +1796,14 @@ PrefabInstance:
     - target: {fileID: 5638379707639403255, guid: b6ec9f6a515652a4aa5134e5e3342fa6, type: 3}
       propertyPath: AudioName
       value: machineOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638379707639403255, guid: b6ec9f6a515652a4aa5134e5e3342fa6, type: 3}
+      propertyPath: MaxUseTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5638379707639403255, guid: b6ec9f6a515652a4aa5134e5e3342fa6, type: 3}
+      propertyPath: EnergyConsumedPerSecond
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6ec9f6a515652a4aa5134e5e3342fa6, type: 3}

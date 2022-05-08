@@ -20,7 +20,7 @@ public class CanvasManager : MonoBehaviour
 
     [SerializeField] GameObject playerController;
 
-    //public MenuActions menuControls;
+    public MenuActions menuControls;
     private InputAction pause;
     private InputAction click;
     private Vector2 hotSpot = new Vector2(0, 0);
@@ -32,11 +32,8 @@ public class CanvasManager : MonoBehaviour
 
         escMenu = transform.GetChild(0).GetComponent<Menu>();
         gameOverMenu = transform.GetChild(1).GetComponent<Menu>();
-        goalMenu = transform.GetChild(2).GetComponent<Menu>();
-        startButton = transform.GetChild(3).GetComponent<Menu>();
         //timer = transform.GetChild(4).GetComponent<Timer>();
-
-        //menuControls = new MenuActions();
+        menuControls = new MenuActions();
         PauseGame();
         StartGame();
     }
@@ -51,7 +48,7 @@ public class CanvasManager : MonoBehaviour
 
     private void OnEnable()
     {
-        //pause = menuControls.Buttons.Pause;
+        pause = menuControls.Buttons.Pause;
         pause.Enable();
         pause.performed += Pause;
     }
@@ -63,7 +60,7 @@ public class CanvasManager : MonoBehaviour
 
     private void Pause(InputAction.CallbackContext context)
     {
-        if (!escMenu.open && !gameOverMenu.open && !goalMenu.open && !startButton.open) OpenEscMenu(); 
+        if (!escMenu.open && !gameOverMenu.open) OpenEscMenu(); 
         else if (escMenu.open) CloseEscMenu();
     }
 

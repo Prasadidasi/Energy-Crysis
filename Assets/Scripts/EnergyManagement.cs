@@ -7,6 +7,7 @@ public class EnergyManagement : MonoBehaviour
     public static EnergyManagement Instance;
 
     private EnergyBar energyBar;
+    
 
     private void Awake()
     {

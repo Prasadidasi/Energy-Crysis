@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8096463613313337454}
   - component: {fileID: 8096463613313337449}
+  - component: {fileID: 1180814518052588745}
   m_Layer: 0
   m_Name: Sprite_Stove_Off
   m_TagString: Untagged
@@ -166,6 +167,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1180814518052588745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8096463613313337455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b5dbdeac9bd5c46922af7292b849e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnergyConsumedPerSecond: 0.5
+  MaxUseTime: 5000
+  currentTime: 0
+  effectVFX: {fileID: 0}
+  AudioName: wrr
+  RequiresSpriteSwap: 1
+  MachineOffSprite: {fileID: 21300000, guid: e2f7f3ca402d15641a0ec2635d688351, type: 3}
+  MachineOnSprite: {fileID: 21300000, guid: 9529ed17ba069b74a868716997567d1c, type: 3}
 --- !u!1 &8096463613417428512
 GameObject:
   m_ObjectHideFlags: 0

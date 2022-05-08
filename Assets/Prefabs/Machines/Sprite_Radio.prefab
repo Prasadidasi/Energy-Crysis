@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5595761287176695826}
   - component: {fileID: 5595761287176695827}
+  - component: {fileID: 1912892660614224886}
   m_Layer: 0
   m_Name: Sprite_Radio
   m_TagString: Untagged
@@ -166,6 +167,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1912892660614224886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5595761287176695825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31b5dbdeac9bd5c46922af7292b849e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnergyConsumedPerSecond: 0.5
+  MaxUseTime: 60
+  currentTime: 0
+  effectVFX: {fileID: 0}
+  AudioName: wrr
+  RequiresSpriteSwap: 0
+  MachineOffSprite: {fileID: 0}
+  MachineOnSprite: {fileID: 0}
 --- !u!1 &5595761287271487154
 GameObject:
   m_ObjectHideFlags: 0
