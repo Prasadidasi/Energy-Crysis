@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'NRG CRYSIS '
+  m_text: 'NRG CRISIS '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfb082b5483040842b1a03052de60989, type: 2}
   m_sharedMaterial: {fileID: 3466479304331325435, guid: dfb082b5483040842b1a03052de60989, type: 2}

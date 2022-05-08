@@ -31,9 +31,13 @@ public class Machine : MonoBehaviour
     public bool hasLightOnSprite = false;
     public GameObject lightOnSprite;
 
+    private CanvasManager canvasManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        canvasManager = GameObject.FindObjectOfType<CanvasManager>();
         energyBar = GameObject.FindObjectOfType<EnergyBar>();
         audioManager = GameObject.FindObjectOfType<AudioManager>();
         StopMachine();
@@ -66,8 +70,18 @@ public class Machine : MonoBehaviour
         }
     }
 
+    public void OnMouseEnter()
+    {
+        Cursor.SetCursor(canvasManager.hoverCursor, Vector2.zero, CursorMode.Auto);
+    }
+    public void OnMouseExit()
+    {
+        Cursor.SetCursor(canvasManager.defaultCursor, Vector2.zero, CursorMode.Auto);
+    }
+
     void OnMouseDown()
     {
+        Cursor.SetCursor(canvasManager.clickCursor, Vector2.zero, CursorMode.Auto);
         audioManager.Play(sfxName);
         if (!isUsingMachine)
         {
@@ -79,10 +93,15 @@ public class Machine : MonoBehaviour
         }
     }
 
+    private void OnMouseUp()
+    {
+        Cursor.SetCursor(canvasManager.defaultCursor, Vector2.zero, CursorMode.Auto);
+    }
+
     //TODO: hover status?
     //private void OnMouseOver()
     //{
-        
+
     //}
 
     public void StartMachine()
@@ -129,6 +148,7 @@ public class Machine : MonoBehaviour
     {
         return isUsingMachine;
     }
+
 
     public void UpdateEnergy()
     {

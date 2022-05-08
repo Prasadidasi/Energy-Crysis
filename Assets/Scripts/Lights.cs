@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Lights : MonoBehaviour
 {
@@ -19,9 +20,11 @@ public class Lights : MonoBehaviour
     private float currentEnergyTime = 1f;
     bool isLightsOn = false;
     EnergyBar energyBar;
+    CanvasManager canvasManager;
 
     public void Start()
     {
+        canvasManager = GameObject.FindObjectOfType<CanvasManager>();
         energyBar = GameObject.FindObjectOfType<EnergyBar>();
         audioManager = GameObject.FindObjectOfType<AudioManager>();
         isLightsOn = false;
@@ -36,8 +39,17 @@ public class Lights : MonoBehaviour
             UpdateEnergy();
         }
     }
+    public void OnMouseEnter()
+    {
+        Cursor.SetCursor(canvasManager.hoverCursor, Vector2.zero, CursorMode.Auto);
+    }
+    public void OnMouseExit()
+    {
+        Cursor.SetCursor(canvasManager.defaultCursor, Vector2.zero, CursorMode.Auto);
+    }
     void OnMouseDown()
     {
+        Cursor.SetCursor(canvasManager.clickCursor, Vector2.zero, CursorMode.Auto);
         audioManager.Play(sfxName);
         if (!isLightsOn)
         {
@@ -65,6 +77,7 @@ public class Lights : MonoBehaviour
         currentEnergyTime = EnergyTime;
         LightsOffPrefab.SetActive(true);
     }
+
     public void UpdateEnergy()
     {
         currentEnergyTime -= Time.deltaTime;
@@ -74,4 +87,5 @@ public class Lights : MonoBehaviour
             currentEnergyTime = EnergyTime;
         }
     }
+
 }

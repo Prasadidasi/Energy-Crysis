@@ -11,6 +11,8 @@ public class CanvasManager : MonoBehaviour
 
     public TMP_Text countDownText;
     public Texture2D defaultCursor;
+    public Texture2D hoverCursor;
+    public Texture2D clickCursor;
 
     static Menu gameOverMenu;
     static Menu escMenu;
@@ -46,6 +48,7 @@ public class CanvasManager : MonoBehaviour
     void FixedUpdate()
     {
     }
+
 
     private void OnEnable()
     {

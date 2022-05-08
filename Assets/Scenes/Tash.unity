@@ -1644,9 +1644,21 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
+      propertyPath: clickCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 1f88ad531e165d14db02624c43771818, type: 3}
+    - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
+      propertyPath: hoverCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: e64bfff9505d0064e8b977ff3503d0e4, type: 3}
+    - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: levelNumber
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
+      propertyPath: defaultCursor
+      value: 
+      objectReference: {fileID: 2800000, guid: 1475cc854f383ff43bdec221b517622f, type: 3}
     - target: {fileID: 7757111397710278170, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1737,7 +1749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397818408959, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7757111398490028106, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_Type
@@ -2100,6 +2112,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569197276}
     m_Modifications:
+    - target: {fileID: 1694872650, guid: cfae8cf318ab3bc4eb76dd0df275f822, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3290625449003449715, guid: cfae8cf318ab3bc4eb76dd0df275f822, type: 3}
       propertyPath: m_Name
       value: Sprite_KitchenFan
@@ -2603,6 +2619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Light
       objectReference: {fileID: 0}
+    - target: {fileID: 6519467168690386042, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6519467168690386043, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2668,6 +2688,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569197276}
     m_Modifications:
+    - target: {fileID: 2034217869, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8096463613313337454, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
       propertyPath: m_RootOrder
       value: 4
