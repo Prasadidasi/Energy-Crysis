@@ -103,6 +103,7 @@ public class Player : MonoBehaviour
             if (item.GetComponent<Machine>().isUsingMachine)
             {
                 currentHunger -= HungerSatisficationWhileMachineOn;
+                currentHunger = Mathf.Clamp(currentHunger, 0, MaxHunger);
             }
         }
     }
