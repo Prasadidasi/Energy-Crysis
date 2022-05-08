@@ -790,30 +790,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.data[0].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: fe1f58b2ccc2ca546b7cacf2e1e97eac, type: 3}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.data[0].loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.data[0].pitch
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.548
-      objectReference: {fileID: 0}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.data[0].audioName
-      value: machineOn
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
 --- !u!1 &1380769511
@@ -1207,6 +1183,10 @@ PrefabInstance:
     - target: {fileID: 7757111397710278150, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757111397710278170, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
+      propertyPath: m_Camera
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397710278171, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_Pivot.x
