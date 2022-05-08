@@ -10,6 +10,10 @@ public class Clock : MonoBehaviour
     [SerializeField] private float currentTime = 300f;
     private bool isClockTimeFinished = false;
 
+    [Header("SFX")]
+    public string sfxName;
+    public string sfxWinName;
+
     public void Start()
     {
         currentTime = MaxTime;

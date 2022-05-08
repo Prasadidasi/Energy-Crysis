@@ -790,6 +790,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
+      propertyPath: sounds.Array.data[0].volume
+      value: 0.56
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
 --- !u!1 &1380769511
@@ -1134,23 +1138,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2085396536193478986, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2085396536193478986, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2085396536193478986, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 54.84
       objectReference: {fileID: 0}
     - target: {fileID: 2085396536193478986, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 27.42
       objectReference: {fileID: 0}
     - target: {fileID: 2085396536193478986, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 2176131825232335811, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_LocalScale.x
@@ -1170,23 +1174,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5739071124310027203, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5739071124310027203, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5739071124310027203, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 54.84
       objectReference: {fileID: 0}
     - target: {fileID: 5739071124310027203, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 27.42
       objectReference: {fileID: 0}
     - target: {fileID: 5739071124310027203, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -16.500002
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397336872844, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1202,7 +1206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397336872847, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397710278149, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_UiScaleMode
@@ -1223,10 +1227,6 @@ PrefabInstance:
     - target: {fileID: 7757111397710278151, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: levelNumber
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7757111397710278170, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
-      propertyPath: m_Camera
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397710278170, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_Camera
@@ -1318,7 +1318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7757111397818408959, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7757111398490028469, guid: 9c132d070ed4a494da80444b65c43db5, type: 3}
       propertyPath: m_LocalScale.x
