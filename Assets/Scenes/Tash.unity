@@ -2688,10 +2688,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569197276}
     m_Modifications:
-    - target: {fileID: 2034217869, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8096463613313337454, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -2739,10 +2735,6 @@ PrefabInstance:
     - target: {fileID: 8096463613313337455, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
       propertyPath: m_Name
       value: Sprite_Stove_Off
-      objectReference: {fileID: 0}
-    - target: {fileID: 8096463613313337455, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
-      propertyPath: m_TagString
-      value: hungerItem
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 849bce4e8685b69469df1aa55b286aae, type: 3}
