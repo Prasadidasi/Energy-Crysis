@@ -31,9 +31,13 @@ public class Windows : MonoBehaviour
 
     private Phases currentPhase = Phases.Phase1;
     private string currentTrack = "track1";
+    private Clock clock;
+    CanvasManager canvasManager;
 
     void Start()
     {
+        canvasManager = GameObject.FindObjectOfType<CanvasManager>();
+        clock = GameObject.FindObjectOfType<Clock>();
         energyBar = GameObject.FindObjectOfType<EnergyBar>();
         audioManager = GameObject.FindObjectOfType<AudioManager>();
         currentPhase = Phases.Phase1;
@@ -69,6 +73,12 @@ public class Windows : MonoBehaviour
                 StartCoroutine(HouseTalk());
                 currentTime = UnityEngine.Random.Range(0, 3)*10f;
             }
+        }
+        if (clock.GetClockStatus())
+        {
+            audioManager.Stop(currentTrack);
+            audioManager.Play("gamewin");
+            canvasManager.OpenVictoryMenu();
         }
     }
 

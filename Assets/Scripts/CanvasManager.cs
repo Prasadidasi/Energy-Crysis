@@ -113,7 +113,7 @@ public class CanvasManager : MonoBehaviour
         SceneManager.LoadScene(levelNumber+1);
     }
 
-    public void LevelComplete()
+    public void OpenVictoryMenu()
     {
         PauseGame();
         victoryMenu.Open();

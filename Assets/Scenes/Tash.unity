@@ -401,6 +401,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1569197276}
     m_Modifications:
+    - target: {fileID: 8920276207792844880, guid: c56c4f88f44fd2d4ba1c6012dbfd1566, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8920276207792844881, guid: c56c4f88f44fd2d4ba1c6012dbfd1566, type: 3}
       propertyPath: TalkUI
       value: 
@@ -693,6 +697,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1514442504}
     m_Modifications:
+    - target: {fileID: 8920276207792844880, guid: c56c4f88f44fd2d4ba1c6012dbfd1566, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 8920276207792844881, guid: c56c4f88f44fd2d4ba1c6012dbfd1566, type: 3}
       propertyPath: TalkUI
       value: 

@@ -31,6 +31,8 @@ public class EnergyBar : MonoBehaviour
     {
         if (currentEnergy <= 0)
         {
+            GameObject.FindObjectOfType<AudioManager>().Stop("track3");
+            GameObject.FindObjectOfType<AudioManager>().Play("gameOver");
             canvasManager.OpenGameOverMenu();
         }
     }
