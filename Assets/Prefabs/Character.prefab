@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8900303643043970169}
   - component: {fileID: 6093339656491071628}
   - component: {fileID: 2896481651478386295}
+  - component: {fileID: 622419790}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -102,6 +103,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &622419790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378344401496232164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aea67542fb95731409e96fb0e42c6b01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxHungerName: hungry
+  pickupPrefab: {fileID: 902855866485390573, guid: b45aeb97042a83649bd81acae8a5e843, type: 3}
+  MaxHunger: 100
+  HungerGainPerSecond: 5
+  HungerSatisficationWhileMachineOn: 5
+  currentTime: 0
+  MaxTime: 1
+  currentHungerState: 0
+  EnergyDrainPerSecond: 0.3
 --- !u!1 &8887088532965257741
 GameObject:
   m_ObjectHideFlags: 0
