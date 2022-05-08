@@ -198,9 +198,12 @@ MonoBehaviour:
   currentTime: 0
   effectVFX: {fileID: 2536651454600311678}
   AudioName: machineOn
+  sfxName: appclick
   RequiresSpriteSwap: 1
   MachineOffSprite: {fileID: 21300000, guid: 1309bdfa6bd1aba44a862f5dd32787f7, type: 3}
   MachineOnSprite: {fileID: 21300000, guid: 4ef8196a88e9298418c32cb290f49e3c, type: 3}
+  hasLightOnSprite: 0
+  lightOnSprite: {fileID: 0}
 --- !u!1001 &377586393440518832
 PrefabInstance:
   m_ObjectHideFlags: 0

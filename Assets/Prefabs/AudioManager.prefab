@@ -47,7 +47,7 @@ MonoBehaviour:
   - audioName: machineOn
     clip: {fileID: 8300000, guid: fe1f58b2ccc2ca546b7cacf2e1e97eac, type: 3}
     loop: 1
-    volume: 0.858
+    volume: 0.56
     pitch: 1
     source: {fileID: 0}
   - audioName: track1
@@ -69,7 +69,7 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
   - audioName: gameOver
-    clip: {fileID: 8300000, guid: fe1f58b2ccc2ca546b7cacf2e1e97eac, type: 3}
+    clip: {fileID: 8300000, guid: 7eb53a115c976874c8b814bd43c856cd, type: 3}
     loop: 1
     volume: 0.548
     pitch: 1
@@ -83,13 +83,13 @@ MonoBehaviour:
   - audioName: panclick
     clip: {fileID: 8300000, guid: 363b1a85c012768418486795312f2a94, type: 3}
     loop: 0
-    volume: 0.548
+    volume: 0.724
     pitch: 1
     source: {fileID: 0}
   - audioName: mailbox
     clip: {fileID: 8300000, guid: 607e6a6c75891d24392e63f76b2aad84, type: 3}
-    loop: 1
-    volume: 0.548
+    loop: 0
+    volume: 0.708
     pitch: 1
     source: {fileID: 0}
   - audioName: hungry
@@ -98,21 +98,15 @@ MonoBehaviour:
     volume: 0.548
     pitch: 1
     source: {fileID: 0}
-  - audioName: fire
-    clip: {fileID: 8300000, guid: 7eb53a115c976874c8b814bd43c856cd, type: 3}
-    loop: 1
-    volume: 0.548
-    pitch: 1
-    source: {fileID: 0}
   - audioName: pickup
     clip: {fileID: 8300000, guid: 5784c1a3fc4bb9b49bd1c52f94564beb, type: 3}
-    loop: 1
+    loop: 0
     volume: 0.548
     pitch: 1
     source: {fileID: 0}
   - audioName: appclick
     clip: {fileID: 8300000, guid: 8b5b3cd72a9248043b1ed52947d2107d, type: 3}
-    loop: 1
-    volume: 0.548
+    loop: 0
+    volume: 0.305
     pitch: 1
     source: {fileID: 0}

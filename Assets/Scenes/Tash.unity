@@ -575,6 +575,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e4aa86faef3275b41b1fdfec6966976f, type: 3}
     - target: {fileID: 6519467168690386036, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
+      propertyPath: sfxName
+      value: appclick
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519467168690386036, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
       propertyPath: LightOff
       value: 
       objectReference: {fileID: 21300000, guid: f5e05901b27cfae438aec61a21387186, type: 3}
@@ -660,7 +664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6519467170063078627, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.32
+      value: -4.38
       objectReference: {fileID: 0}
     - target: {fileID: 6519467170063078627, guid: d80068ec89275de40ac71aa1866c1a73, type: 3}
       propertyPath: m_LocalPosition.y
@@ -789,10 +793,6 @@ PrefabInstance:
     - target: {fileID: 5397112626943429258, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6021124339098768142, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0.56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e4ec4f04e175d6d41bf5ebe5ad117366, type: 3}
@@ -1448,10 +1448,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 902855866485390573, guid: b45aeb97042a83649bd81acae8a5e843, type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2972694625896860181, guid: b45aeb97042a83649bd81acae8a5e843, type: 3}
-      propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -186,6 +186,7 @@ MonoBehaviour:
   currentTime: 0
   effectVFX: {fileID: 6220281561195239416}
   AudioName: machineOn
+  sfxName: appclick
   RequiresSpriteSwap: 1
   MachineOffSprite: {fileID: 21300000, guid: e2f7f3ca402d15641a0ec2635d688351, type: 3}
   MachineOnSprite: {fileID: 21300000, guid: 9529ed17ba069b74a868716997567d1c, type: 3}
