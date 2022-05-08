@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class Lights : MonoBehaviour
 {
+    AudioManager audioManager;
+
     [Header("Light Settings")]
     public GameObject LightsOffPrefab;
     public Sprite LightOn;
     public Sprite LightOff;
     public float EnergyConsumedPerSecond = 0.05f;
+
+    [Header("SFX")]
+    public string sfxName;
 
     private float EnergyTime = 1f;
     private float currentEnergyTime = 1f;
@@ -18,6 +23,7 @@ public class Lights : MonoBehaviour
     public void Start()
     {
         energyBar = GameObject.FindObjectOfType<EnergyBar>();
+        audioManager = GameObject.FindObjectOfType<AudioManager>();
         isLightsOn = false;
         this.GetComponent<SpriteRenderer>().sprite = LightOn;
         LightsOffPrefab.SetActive(true);
@@ -32,6 +38,7 @@ public class Lights : MonoBehaviour
     }
     void OnMouseDown()
     {
+        audioManager.Play(sfxName);
         if (!isLightsOn)
         {
             TurnLightOn();
@@ -48,7 +55,7 @@ public class Lights : MonoBehaviour
         currentEnergyTime = EnergyTime;
         LightsOffPrefab.SetActive(false);
         this.GetComponent<SpriteRenderer>().sprite = LightOn;
-        UpdateEnergy();     
+        UpdateEnergy();
     }
 
     public void TurnLightOff()

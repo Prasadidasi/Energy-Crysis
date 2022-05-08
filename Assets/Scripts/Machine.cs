@@ -20,6 +20,7 @@ public class Machine : MonoBehaviour
 
     [Header("SFX Settings")]
     public string AudioName = "machineOn";
+    public string sfxName; //for the click on appliance
     AudioManager audioManager;
 
     [Header("Sprite Settings")]
@@ -68,6 +69,7 @@ public class Machine : MonoBehaviour
 
     void OnMouseDown()
     {
+        audioManager.Play(sfxName);
         if (!isUsingMachine)
         {
             StartMachine();

@@ -47,25 +47,25 @@ MonoBehaviour:
   - audioName: machineOn
     clip: {fileID: 8300000, guid: fe1f58b2ccc2ca546b7cacf2e1e97eac, type: 3}
     loop: 1
-    volume: 0.548
+    volume: 0.858
     pitch: 1
     source: {fileID: 0}
   - audioName: track1
-    clip: {fileID: 8300000, guid: eac5da97f4505a54f8ca67088fbf6cd1, type: 3}
+    clip: {fileID: 8300000, guid: 8e1aa6c5d970d3249b1f3b7df7b74e42, type: 3}
     loop: 1
-    volume: 0.548
+    volume: 0.866
     pitch: 1
     source: {fileID: 0}
   - audioName: track2
-    clip: {fileID: 8300000, guid: b8d74aa49e958d040ba443c8c8bfdbed, type: 3}
+    clip: {fileID: 8300000, guid: 1fc4de6eba5962c4cbc6cdde8a752c4c, type: 3}
     loop: 1
-    volume: 0.548
+    volume: 0.757
     pitch: 1
     source: {fileID: 0}
   - audioName: track3
-    clip: {fileID: 8300000, guid: e284b1d1db754c74bbe21f98b7ab52de, type: 3}
+    clip: {fileID: 8300000, guid: 22e8f6a64f1e2cd4aa0e482175af7b9e, type: 3}
     loop: 1
-    volume: 0.548
+    volume: 0.86
     pitch: 1
     source: {fileID: 0}
   - audioName: gameOver
@@ -80,8 +80,38 @@ MonoBehaviour:
     volume: 0.548
     pitch: 1
     source: {fileID: 0}
-  - audioName: menu
-    clip: {fileID: 8300000, guid: fe1f58b2ccc2ca546b7cacf2e1e97eac, type: 3}
+  - audioName: panclick
+    clip: {fileID: 8300000, guid: 363b1a85c012768418486795312f2a94, type: 3}
+    loop: 0
+    volume: 0.548
+    pitch: 1
+    source: {fileID: 0}
+  - audioName: mailbox
+    clip: {fileID: 8300000, guid: 607e6a6c75891d24392e63f76b2aad84, type: 3}
+    loop: 1
+    volume: 0.548
+    pitch: 1
+    source: {fileID: 0}
+  - audioName: hungry
+    clip: {fileID: 8300000, guid: e9576e95f0e4e3a46baff0eefd871322, type: 3}
+    loop: 1
+    volume: 0.548
+    pitch: 1
+    source: {fileID: 0}
+  - audioName: fire
+    clip: {fileID: 8300000, guid: 7eb53a115c976874c8b814bd43c856cd, type: 3}
+    loop: 1
+    volume: 0.548
+    pitch: 1
+    source: {fileID: 0}
+  - audioName: pickup
+    clip: {fileID: 8300000, guid: 5784c1a3fc4bb9b49bd1c52f94564beb, type: 3}
+    loop: 1
+    volume: 0.548
+    pitch: 1
+    source: {fileID: 0}
+  - audioName: appclick
+    clip: {fileID: 8300000, guid: 8b5b3cd72a9248043b1ed52947d2107d, type: 3}
     loop: 1
     volume: 0.548
     pitch: 1
