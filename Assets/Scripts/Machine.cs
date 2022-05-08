@@ -19,7 +19,7 @@ public class Machine : MonoBehaviour
     public GameObject effectVFX;
 
     [Header("SFX Settings")]
-    public string AudioName = "wrr";
+    public string AudioName = "machineOn";
     AudioManager audioManager;
 
     [Header("Sprite Settings")]
@@ -27,8 +27,9 @@ public class Machine : MonoBehaviour
     public bool RequiresSpriteSwap = false;
     public Sprite MachineOffSprite;
     public Sprite MachineOnSprite;
+    public bool hasLightOnSprite = false;
+    public GameObject lightOnSprite;
 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +44,10 @@ public class Machine : MonoBehaviour
         if (MachineOffSprite == null)
         {
             Debug.LogWarning("machine off sprite for " + this.gameObject.name + " has been not added (is null)");
+        }
+        if (hasLightOnSprite)
+        {
+            lightOnSprite.SetActive(false);
         }
     }
 
@@ -91,6 +96,10 @@ public class Machine : MonoBehaviour
         {
             effectVFX.SetActive(true);
         }
+        if (hasLightOnSprite)
+        {
+            lightOnSprite.SetActive(true);
+        }
         UpdateEnergy();
         audioManager.Play(AudioName);
     }
@@ -105,6 +114,10 @@ public class Machine : MonoBehaviour
         else
         {
             effectVFX.SetActive(false);
+        }
+        if (hasLightOnSprite)
+        {
+            lightOnSprite.SetActive(false);
         }
         currentEnergyTime = EnergyTime;
         currentTime = 0;
