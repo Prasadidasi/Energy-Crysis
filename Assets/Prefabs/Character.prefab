@@ -119,7 +119,7 @@ MonoBehaviour:
   pickupPrefab: {fileID: 902855866485390573, guid: b45aeb97042a83649bd81acae8a5e843, type: 3}
   MaxHunger: 100
   currentHunger: 0
-  HungerGainPerSecond: 2
+  HungerGainPerSecond: 4
   HungerSatisficationWhileMachineOn: 5
   currentTime: 0
   MaxTime: 1
