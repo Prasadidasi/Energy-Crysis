@@ -113,8 +113,8 @@ public class Player : MonoBehaviour
         CheckHungerItemsOn();
         if (currentHunger >= MaxHunger && currentHungerState == HungerState.hungry)
         {
-            canvasManager.OpenGameOverMenu();
-            Time.timeScale = 0;
+            //canvasManager.OpenGameOverMenu();
+            //Time.timeScale = 0;
         }
         if ((currentHunger / MaxHunger) >= 0.80)
         {

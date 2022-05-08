@@ -29,12 +29,7 @@ public class EnergyBar : MonoBehaviour
 
     private void Update()
     {
-        if (currentEnergy <= 0)
-        {
-            GameObject.FindObjectOfType<AudioManager>().Stop("track3");
-            GameObject.FindObjectOfType<AudioManager>().Play("gameOver");
-            canvasManager.OpenGameOverMenu();
-        }
+        
     }
 
     private void UpdateEnergyBar()
@@ -51,6 +46,12 @@ public class EnergyBar : MonoBehaviour
         else if (GetEnergyStatus() <= 35 && 0 < GetEnergyStatus())
         {
             currentPhase = Phases.Phase3;
+        } 
+        else if(currentEnergy <= 0)
+        {
+                GameObject.FindObjectOfType<AudioManager>().Stop("track3");
+                GameObject.FindObjectOfType<AudioManager>().Play("gameOver");
+                canvasManager.OpenGameOverMenu();
         }
     }
 
