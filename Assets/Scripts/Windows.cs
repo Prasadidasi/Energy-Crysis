@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Windows : MonoBehaviour
 {
@@ -18,6 +19,16 @@ public class Windows : MonoBehaviour
     public string Track2Name = "track2";
     public string Track3Name = "track3";
 
+    [Header("House Talk Settings")]
+    public GameObject TalkUI;
+    public string[] promptsLow;
+    public string[] promptsMedium; 
+    public string[] promptsUrgent;
+    public int promptTimeInSeconds = 4;
+    public bool isFirstWindow = false;
+    private float MaxTIME = 4;
+    private float currentTime = 0;
+
     private Phases currentPhase = Phases.Phase1;
     private string currentTrack = "track1";
 
@@ -29,12 +40,36 @@ public class Windows : MonoBehaviour
         this.GetComponent<SpriteRenderer>().sprite = Phase1;
         audioManager.Play(Track1Name);
         currentTrack = Track1Name;
+        if (isFirstWindow)
+        {
+            if (TalkUI == null)
+            {
+                Debug.LogError("talk Prefab UI is null!");
+            }
+            if (promptsLow == null || promptsMedium == null || promptsUrgent == null)
+            {
+                Debug.LogError("prompt messages are null!");
+            }
+        }
+        if(TalkUI != null)
+            TalkUI.SetActive(false);
+        MaxTIME = 2;
+        currentTime = MaxTIME*10;//convertion to seconds
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckPhase();
+        if (isFirstWindow)
+        {
+            currentTime -= Time.deltaTime;
+            if(currentTime <= 0)
+            {
+                StartCoroutine(HouseTalk());
+                currentTime = UnityEngine.Random.Range(0, 3)*10f;
+            }
+        }
     }
 
     void CheckPhase()
@@ -72,10 +107,36 @@ public class Windows : MonoBehaviour
         
     }
 
+    string GetPrompt()
+    { 
+        string tmp = "";
+        if(currentPhase == Phases.Phase1)
+        {
+            tmp = promptsLow[UnityEngine.Random.Range(0, promptsLow.Length)];
+        }
+        else if (currentPhase == Phases.Phase2)
+        {
+            tmp = promptsMedium[UnityEngine.Random.Range(0, promptsMedium.Length)]; ;
+        }
+        else
+        {
+            tmp = promptsUrgent[UnityEngine.Random.Range(0, promptsUrgent.Length)]; ;
+        }
+        return tmp;
+    }
+
     IEnumerator blendIntoTrack(string OldTrack, string NewTrack)
     {
         audioManager.Play(NewTrack);
         yield return new WaitForSecondsRealtime(1);
         audioManager.Stop(OldTrack);
+    }
+
+    IEnumerator HouseTalk()
+    {
+        TalkUI.SetActive(true);
+        TalkUI.GetComponentInChildren<Text>().text = GetPrompt();
+        yield return new WaitForSeconds(promptTimeInSeconds);
+        TalkUI.SetActive(false);
     }
 }

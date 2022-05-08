@@ -98,3 +98,19 @@ MonoBehaviour:
   Phase1: {fileID: 21300000, guid: c09c20aa9d5932546b8c6f5b9d01fd80, type: 3}
   Phase2: {fileID: 21300000, guid: 215760f0abf95144faafad47506a9222, type: 3}
   Phase3: {fileID: 21300000, guid: fa1e16ab3d7d99d4db9ce47887afe467, type: 3}
+  Track1Name: track1
+  Track2Name: track2
+  Track3Name: track3
+  TalkUI: {fileID: 0}
+  promptsLow:
+  - Good Energy Mode
+  - Life is Good
+  promptsMedium:
+  - Energy is depleting
+  - Stable for now
+  promptsUrgent:
+  - Immediate assitance needed!
+  - At critical level of energy!
+  - Energy is too Low!
+  promptTimeInSeconds: 4
+  isFirstWindow: 1
