@@ -118,7 +118,8 @@ MonoBehaviour:
   sfxHungerName: hungry
   pickupPrefab: {fileID: 902855866485390573, guid: b45aeb97042a83649bd81acae8a5e843, type: 3}
   MaxHunger: 100
-  HungerGainPerSecond: 5
+  currentHunger: 0
+  HungerGainPerSecond: 2
   HungerSatisficationWhileMachineOn: 5
   currentTime: 0
   MaxTime: 1

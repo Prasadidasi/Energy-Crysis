@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
     [Header("Hunger Settings")]
     public float MaxHunger = 100;
-    float currentHunger = 0;
+    [SerializeField] float currentHunger = 0;
     public float HungerGainPerSecond = 5;
     public float HungerSatisficationWhileMachineOn = 5;
     [SerializeField] float currentTime = 0;
@@ -62,26 +62,18 @@ public class Player : MonoBehaviour
     void Update()
     {
         currentTime += Time.deltaTime;
-        if(currentTime >= MaxTime)
+        if (currentTime >= MaxTime)
         {
             energyBar.MinusEnergy(EnergyDrainPerSecond);
             currentHunger += HungerGainPerSecond;
             CheckHungerStatus();
             currentTime = 0;
-        }
-
-        foreach(GameObject item in hungerItems)
-        {
-            if (item.GetComponent<Machine>().isUsingMachine)
-            {
-                currentHunger -= HungerSatisficationWhileMachineOn;
-            }
-        }
+        }   
 
         if (!clock.GetClockStatus())
         {
             float time = clock.GetCurrentTime() / clock.MaxTime;
-            if (time <= 0.60 && !hasDropped)
+            if (time <= 0.70 && !hasDropped)
             {
                 Instantiate(pickupPrefab);
                 pickupPrefab.GetComponent<EnergyPickUp>().EnergyAmount = GetEnergyAmount();
@@ -101,11 +93,23 @@ public class Player : MonoBehaviour
             }
         }
 
-        
+
+    }
+
+    private void CheckHungerItemsOn()
+    {
+        foreach (GameObject item in hungerItems)
+        {
+            if (item.GetComponent<Machine>().isUsingMachine)
+            {
+                currentHunger -= HungerSatisficationWhileMachineOn;
+            }
+        }
     }
 
     private void CheckHungerStatus()
     {
+        CheckHungerItemsOn();
         if (currentHunger >= MaxHunger && currentHungerState == HungerState.hungry)
         {
             canvasManager.OpenGameOverMenu();
@@ -134,15 +138,15 @@ public class Player : MonoBehaviour
         float tmp = 0;
         if((currentHunger/MaxHunger) <= 0.10)
         {
-            tmp = 30;
+            tmp = 40;
         }
         if ((currentHunger / MaxHunger) <= 0.20)
         {
-            tmp = 20;
+            tmp = 30;
         }
         if ((currentHunger / MaxHunger) <= 0.30)
         {
-            tmp = 10;
+            tmp = 20;
         }
         return tmp;
     }
