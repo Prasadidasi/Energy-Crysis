@@ -12,6 +12,7 @@ public enum Phases
 
 public class EnergyBar : MonoBehaviour
 {
+    CanvasManager canvasManager;
     public Image energyImage;
     private Phases currentPhase = Phases.Phase1;
 
@@ -22,7 +23,16 @@ public class EnergyBar : MonoBehaviour
     private void Start()
     {
         currentPhase = Phases.Phase1;
+        canvasManager = GameObject.FindObjectOfType<CanvasManager>();
         UpdateEnergyBar();
+    }
+
+    private void Update()
+    {
+        if (currentEnergy <= 0)
+        {
+            canvasManager.OpenGameOverMenu();
+        }
     }
 
     private void UpdateEnergyBar()

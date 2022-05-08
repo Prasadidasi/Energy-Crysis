@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     public static MenuManager Instance;
@@ -26,7 +26,11 @@ public class MenuManager : MonoBehaviour
             }
         }
     }
-    
+
+    public void LoadLevel(int levelNumber)
+    {
+        SceneManager.LoadScene(levelNumber);
+    }
 
     public void OpenMenu(Menu menu) 
     {

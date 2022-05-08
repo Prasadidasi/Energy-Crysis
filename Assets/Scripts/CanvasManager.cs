@@ -14,7 +14,7 @@ public class CanvasManager : MonoBehaviour
 
     static Menu gameOverMenu;
     static Menu escMenu;
-    static Menu goalMenu;
+    static Menu victoryMenu;
     static Menu startButton;
     //static Timer timer;
 
@@ -30,8 +30,9 @@ public class CanvasManager : MonoBehaviour
     {
         Instance = this;
 
-        escMenu = transform.GetChild(0).GetComponent<Menu>();
-        gameOverMenu = transform.GetChild(1).GetComponent<Menu>();
+        gameOverMenu = transform.GetChild(0).GetComponent<Menu>();
+        escMenu = transform.GetChild(1).GetComponent<Menu>();
+        victoryMenu = transform.GetChild(2).GetComponent<Menu>();
         //timer = transform.GetChild(4).GetComponent<Timer>();
         menuControls = new MenuActions();
         PauseGame();
@@ -60,7 +61,7 @@ public class CanvasManager : MonoBehaviour
 
     private void Pause(InputAction.CallbackContext context)
     {
-        if (!escMenu.open && !gameOverMenu.open) OpenEscMenu(); 
+        if (!escMenu.open && !gameOverMenu.open && !victoryMenu.open) OpenEscMenu(); 
         else if (escMenu.open) CloseEscMenu();
     }
 
@@ -112,7 +113,7 @@ public class CanvasManager : MonoBehaviour
     public void LevelComplete()
     {
         PauseGame();
-        goalMenu.Open();
+        victoryMenu.Open();
     }
 
     public void OpenGameOverMenu()
